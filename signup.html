@@ -21,26 +21,38 @@
 
         <div class="col-7 border mx-auto">
             <h3 class="text-center">アカウントの作成</h3>
-            <label for="username" style="margin-left: 4em;">ユーザー名</label>
-            <input type="text" class="form-control mx-auto" style="width: 400px;" id="username" placeholder="ニックネームの入力">
-            <label for="username" style="margin-left: 4em;">メールアドレス</label>
-            <input type="text" class="form-control mx-auto" style="width: 400px;" id="username" placeholder="ニックネームの入力">
+            <label for="username" class="ml-5">ユーザー名</label>
+            <input type="text" class="form-control mx-auto col-10" id="username" placeholder="ニックネームの入力">
 
+            <label for="email" class="ml-5">メールアドレス</label>
+            <input type="email" class="form-control mx-auto col-10" id="email"
+                placeholder="forexample@xxx.xx">
 
+            <label for="exampleInputPassword1" class="ml-5">パスワード (英数6文字以上)</label>
+            <input type="password" class="form-control mx-auto col-10" id="exampleInputPassword1">
+
+            <label for="exampleInputPassword1" class="ml-5">パスワード再確認</label>
+            <input type="password" class="form-control mx-auto col-10" id="exampleInputPassword1">
+
+            <p class="mt-2 text-center"><a class="ml-5" href="./terms.html">利用規約</a>に同意しました。<input type="checkbox"></p>
+
+            <p class="text-center"><a type="button" class="btn btn-success" style="color: white;">確認画面へ進む</a></p>
 
         </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
