@@ -1,0 +1,26 @@
+#button-add {
+    float: right; 
+    width: 6em; 
+    height: 2.5em; 
+    border-radius: 3em; 
+    background-color: greenyellow;
+    color: black;
+    border: none;
+}
+
+.task{
+    height: 3em;
+}
+
+.task-title{
+    line-height: 2.5em;
+    margin: 0;
+    padding-left: 1em;
+    display: inline;
+}
+
+.task-content{
+    float: right;
+    margin-right: 3em;
+    line-height: 4em;
+}
