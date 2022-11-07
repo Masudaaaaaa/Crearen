@@ -34,9 +34,24 @@
             <div class="col-8">
                 <div class="m-2 p-3 border">
                     <h2 class="my-4" style="display: inline;">ToDo</h2>
-                    <button id="button-add">＋追加</button>
+                    <button id="openAddTask" class="button-add">＋追加</button>
+                    <!--追加ポップアップここから-->
+                    <section id="addTask" class="modalArea">
+                        <div id="addTaskBg" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="addContents">
+                                <h1>追加用ポップアップだよ～ん</h1>
+                                <p>追加をするならさっさと追加しろ</p>
+                            </div>
+                            <div id="closeAddTask" class="closeModal">
+                                ×
+                            </div>
+                        </div>
+                    </section>
+                    <!--追加ポップアップここまで-->
+
                     <!-- phpで繰り返す -->
-                    <div class="border my-3">
+                    <div class="border my-3" id="openEditTask">
                         <h4 class="task-title">課題をやる</h4>
                         <span class="task-content">期限</span>
                         <span class="task-content">優先度</span>
@@ -44,8 +59,25 @@
                     <div class="border my-3">
                         <h4 class="task-title">飲み物を飲む</h4>
                     </div>
+
+                    <!--編集ポップアップここから-->
+                    <section id="editTask" class="modalArea">
+                        <div id="editTaskBg" class="modalBg"></div>
+                        <div class="modalWrapper">
+                            <div class="editContents">
+                                <h1>編集用ポップアップです</h1>
+                                <p>編集をしたいならさっさと編集しろ</p>
+                            </div>
+                            <div id="closeEditTask" class="closeModal">
+                                ×
+                            </div>
+                        </div>
+                    </section>
+                    <!--編集ポップアップここまで-->
+
                 </div>
             </div>
+
             <div class="col-4">
                 <div class="m-2 p-3 border">
                     <h2 class="my-4">遊び要素</h2>
@@ -120,6 +152,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#openAddTask').click(function () {
+                $('#addTask').fadeIn();
+            });
+            $('#closeAddTask , #addTaskBg').click(function () {
+                $('#addTask').fadeOut();
+            });
+        });
+    </script>
+
+<script>
+    $(function () {
+        $('#openEditTask').click(function () {
+            $('#editTask').fadeIn();
+        });
+        $('#closeEditTask , #addTaskBg').click(function () {
+            $('#editTask').fadeOut();
+        });
+    });
+</script>
 </body>
 
 </html>
